@@ -25,6 +25,7 @@ button {
     background: #333;
     color: #fff;
     font-size: .4rem;
+    border-radius: 20px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
@@ -37,6 +38,7 @@ button:hover {
     width: 100px;
     height: 100px;
     background: #ff0000;
+    border-radius: 20px;
     transition: background 0.5s ease;
 }
 
