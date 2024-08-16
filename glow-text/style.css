@@ -1,0 +1,43 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+}
+
+.neon-text {
+    font-size: .9rem;
+    color: #fff;
+    text-shadow: 0 0 10px #00ffcc,
+                 0 0 20px #00ffcc,
+                 0 0 30px #00ffcc,
+                 0 0 40px #00ffcc,
+                 0 0 50px #00ffcc,
+                 0 0 60px #00ffcc,
+                 0 0 70px #00ffcc;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00ffcc,
+                     0 0 20px #00ffcc,
+                     0 0 30px #00ffcc,
+                     0 0 40px #00ffcc,
+                     0 0 50px #00ffcc,
+                     0 0 60px #00ffcc,
+                     0 0 70px #00ffcc;
+    }
+    to {
+        text-shadow: 0 0 20px #00ffcc,
+                     0 0 30px #00ffcc,
+                     0 0 40px #00ffcc,
+                     0 0 50px #00ffcc,
+                     0 0 60px #00ffcc,
+                     0 0 70px #00ffcc,
+                     0 0 80px #00ffcc;
+    }
+}
