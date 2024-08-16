@@ -1,0 +1,72 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative; /* Add this to make the pseudo-elements work correctly */
+    overflow: hidden; /* Add this to contain the pseudo-elements within the button */
+}
+
+.btn-1 {
+    background-color: #3498db;
+}
+
+.btn-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #2980b9;
+    transition: all 0.4s ease;
+}
+
+.btn-1:hover::before {
+    left: 0;
+}
+
+.btn-2 {
+    background-color: #e74c3c;
+}
+
+.btn-2:hover {
+    transform: scale(1.1) rotate(10deg);
+    background-color: #c0392b;
+}
+
+.btn-3 {
+    background-color: #2ecc71;
+}
+
+.btn-3::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: height 0.3s ease, top 0.3s ease; /* Ensure both height and top transition smoothly */
+}
+
+.btn-3:hover::after {
+    height: 100%;
+    top: 0;
+}
